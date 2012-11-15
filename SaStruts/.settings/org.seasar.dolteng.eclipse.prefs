@@ -1,0 +1,11 @@
+#Sat Apr 21 21:43:19 JST 2012
+DaoType=S2JDBC
+DefaultResourcePath=/SaStruts/src/main/resources
+DefaultRootPackage=career
+DefaultSrcPath=/SaStruts/src/main/java
+ServletPath=/SaStruts
+ViewType=SA-Struts
+WebContentsRoot=src/main/webapp/
+eclipse.preferences.version=1
+isUsePublicField=true
+prefs.children=app,

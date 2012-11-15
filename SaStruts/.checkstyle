@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fileset-config file-format-version="1.2.0" simple-config="true" sync-formatter="false">
+  <local-check-config name="Reedex CheckStyle For SaStruts" location="CheckStyle" type="project" description="Sun の規約を多少ゆるくしたものに SaStruts のプロパティ系は public を使用するという基本指針を加味したもの。">
+    <additional-data name="protect-config-file" value="false"/>
+  </local-check-config>
+  <fileset name="すべて" enabled="true" check-config-name="Reedex CheckStyle For SaStruts" local="true">
+    <file-match-pattern match-pattern="." include-pattern="true"/>
+  </fileset>
+  <filter name="FilesFromPackage" enabled="true">
+    <filter-data value="src/main/java/career/entity"/>
+  </filter>
+</fileset-config>

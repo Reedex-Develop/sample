@@ -1,0 +1,38 @@
+package career.service;
+
+import static career.entity.CareerMiddleNames.careerId;
+import static career.entity.CareerMiddleNames.mstMiddleId;
+import static org.seasar.extension.jdbc.operation.Operations.asc;
+
+import java.util.List;
+
+import javax.annotation.Generated;
+
+import career.entity.CareerMiddle;
+
+/**
+ * {@link CareerMiddle}のサービスクラスです。
+ */
+@Generated(value = { "S2JDBC-Gen 2.4.45", "org.seasar.extension.jdbc.gen.internal.model.ServiceModelFactoryImpl" }, date = "2012/04/21 22:54:20")
+public class CareerMiddleService extends AbstractService<CareerMiddle> {
+
+    /**
+     * 識別子でエンティティを検索します。
+     * @param careerId
+     *            識別子
+     * @param mstMiddleId
+     *            識別子
+     * @return エンティティ
+     */
+    public CareerMiddle findById(Integer careerId, Integer mstMiddleId) {
+        return select().id(careerId, mstMiddleId).getSingleResult();
+    }
+
+    /**
+     * 識別子の昇順ですべてのエンティティを検索します。
+     * @return エンティティのリスト
+     */
+    public List<CareerMiddle> findAllOrderById() {
+        return select().orderBy(asc(careerId()), asc(mstMiddleId())).getResultList();
+    }
+}

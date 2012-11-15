@@ -1,0 +1,9 @@
+#Sat Apr 21 21:42:59 JST 2012
+Charset=UTF-8
+ConnectionName=app
+ConnectionUrl=jdbc\:mysql\://localhost\:3306/app
+DriverClass=com.mysql.jdbc.Driver
+DriverPath=/C\:/develop/workspace/SaStruts/src/main/webapp/WEB-INF/lib/mysql-connector-java-5.1.19-bin.jar|
+Pass=app
+User=app
+eclipse.preferences.version=1
